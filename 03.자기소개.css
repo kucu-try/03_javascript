@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+    /* border: 1px solid black; */
+}
+body {
+    background-color: #212020;
+    color: white;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+header {
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding: 1.2rem 0;
+}
+header>p {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+header>ul {
+    display: flex;
+}
+header>ul>li {
+    list-style-type: none;
+    margin-left: 1.5rem;
+}
+header>ul>li>a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 800;
+    padding-bottom: 5px;
+    color: gray;
+}
+header>ul>li:first-child>a {
+    color: white;
+    border-bottom: 5px solid white;
+}
+header>ul>li>a:hover {
+    color: white;
+    border-bottom: 5px solid gray;
+}
+@media screen and (max-width:600px){
+    header {
+        flex-direction: column;
+    }
+}
+section {
+    padding: 0 3rem;
+    text-align: center;
+}
+section>p {
+    margin-bottom: 2rem;
+}
+section>p:first-child {
+    font-size: 2rem;
+    font-weight: 900;
+}
+section>p:last-of-type{
+    width: 500px;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.btn {
+    border: 1px solid black;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    justify-items: center;
+    text-transform: uppercase;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+    color: black;
+    font-weight: 500;
+    font-size: 20px;
+    background-color: white;
+    padding: 1rem;
+    margin: auto ;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.20);
+    border-radius: 10px;
+}
+
+
+.btn span {
+    position: relative; 
+    z-index: 1;
+}
+.btn:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 490%;
+    width: 230%;
+    background: #27c0e2;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+    transform: translateX(-98%) translateY(-25%) rotate(45deg);
+    
+}
+
+.btn:hover:after {
+    -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+    transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+
+
+footer {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    color: gray;
+}
+
+footer>a {
+    text-decoration: none;
+    color: white;
+}
