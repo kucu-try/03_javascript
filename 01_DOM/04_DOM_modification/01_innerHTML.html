@@ -11,7 +11,7 @@
         Elment.prototype.innerHtml 프로퍼티는 setter와
         getter 모두 존재하는 접근자로 프로퍼티로 요소 노드의 html 마크업을 취득하거나 변경한다..
 
-        textContent 프로퍼티는 html 마크업을 무시하도 텍스트만 반환하지만 innerhtml 프로퍼티느 html 마크업이 포함된 문자열을 그대로 반환한다.
+        textContent 프로퍼티는 html 마크업을 무시해도 텍스트만 반환하지만 innerhtml 프로퍼티느 html 마크업이 포함된 문자열을 그대로 반환한다.
     </pre>
     <div id="area">
         태그 엘리먼트의 값을 읽거나, 변경할 때
@@ -38,7 +38,10 @@
 
     <script>
         $area.innerHTML = ` 
-        <img src="x" onerror='alert("~~~")'>`;
+        <img src="x" onerror='alert("~~~")'>
+        `;
+
+        
     </script>
 
 </body>

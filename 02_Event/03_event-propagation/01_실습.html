@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="test">안녕하세요</h1>
+    <button onclick="btn1()">버튼1</button>
+    <button onclick="btn2()">버튼2</button>
+    <button onclick="btn3()">버튼3</button>
+
+    <script>
+        const $h1 = document.getElementById("test");
+       
+        function btn1(){
+            $h1.style.color="red";
+        }
+
+        function btn2(){
+            $h1.innerHTML="hi";
+        }
+        function btn3(){
+            alert("으아아악");
+        }
+
+    </script>
+</body>
+</html>

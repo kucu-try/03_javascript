@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="kucu">옆의 input에 적혀 있는 글을 if 문을 통해 없애기</label>
+    <input for="text" id="kucu" value="으헤헤헤헿"></input>
+    
+    <script>
+        const $kucu = document.getElementById("kucu");
+
+        if($kucu.hasAttribute('value')){
+            $kucu.removeAttribute('value');
+        }
+        
+        console.log($kucu.hasAttribute('value'));
+        
+        
+    </script>
+
+    
+</body>
+</html>
