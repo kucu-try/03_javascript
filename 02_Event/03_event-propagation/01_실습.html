@@ -11,8 +11,61 @@
     2. 1번 버튼은 색변경 기능을 만들어주세요
     3. 2번 버튼은 안녕하세요를 hi로 변경해주세요
     4. 3번 버튼은 alert메세지를 화면에 출력해주세요 -->
+
+
     <h1 id="test1">안녕하세요</h1>
-    <button onclick = "btn1()">버튼1</button>
+    <button id="btn1">버튼1</button>
+    <button id="btn2">버튼2</button>
+    <button onclick="alert('으악')">버튼3</button>
+
+    <script>
+        const $test1 = document.getElementById("test1");
+        const $button1 = document.getElementById("btn1");
+        const $button2 = document.getElementById("btn2");
+
+        $button1.onclick=function(){
+            $test1.style.color="red";
+        };
+          
+        
+        $button2.onclick=function(){
+            $test1.innerHTML = 'hi';
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <h1 id="test1">안녕하세요</h1>
+    <button id="btn1">버튼1</button>
+    <button id="btn2">버튼2</button>
+    <button onclick="alert('으악')">버튼3</button>
+
+    <script>
+        const $test1 = document.getElementById("test1");
+        const $button1 = document.getElementById("btn1");
+        const $button2 = document.getElementById("btn2");
+
+        $button1.addEventListener("click" , e=>{
+            $test1.style.color="red";
+        });
+        $button2.addEventListener("click" , e=>{
+            $test1.textContent='hi';
+        } );
+    </script> -->
+
+
+
+    <!-- <button onclick = "btn1()">버튼1</button>
     <button onclick = "btn2()">버튼2</button>
     <button onclick = "btn3()">버튼3</button>
     <script>
@@ -29,7 +82,7 @@
         function btn3(){
             alert("으아아악");
         }
-    </script>
+    </script> -->
 </body>
 </html>
 
@@ -45,25 +98,3 @@
 
 
 
-
-
-<!-- <h1 id="test">안녕하세요</h1>
-<button onclick="btn1()">버튼1</button>
-<button onclick="btn2()">버튼2</button>
-<button onclick="btn3()">버튼3</button>
-
-<script>
-    const $h1 = document.getElementById("test");
-   
-    function btn1(){
-        $h1.style.color="red";
-    }
-
-    function btn2(){
-        $h1.innerHTML="hi";
-    }
-    function btn3(){
-        alert("으아아악");
-    }
-
-</script> -->
